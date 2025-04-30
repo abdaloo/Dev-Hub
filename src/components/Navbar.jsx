@@ -19,10 +19,10 @@ function Header() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex">
           <ul className="flex gap-6 text-[18px] text-white items-center font-semibold">
-            <Link to="/"><li className="hover:text-[#E1EEBC] transition">Home</li></Link>
-            <Link to="/about"><li className="hover:text-[#E1EEBC] transition">About</li></Link>
-            <Link to="/softwareHouses"><li className="hover:text-[#E1EEBC] transition">Software Houses</li></Link>
-            <Link to="/contact"><li className="hover:text-[#E1EEBC] transition">Contact</li></Link>
+            <Link to="/"><li className="hover:text-[#E1EEBC] transition text-sm">Home</li></Link>
+            <Link to="/about"><li className="hover:text-[#E1EEBC] transition text-sm">About</li></Link>
+            <Link to="/softwareHouses"><li className="hover:text-[#E1EEBC] transition text-sm">Software Houses</li></Link>
+            <Link to="/contact"><li className="hover:text-[#E1EEBC] transition text-sm">Contact</li></Link>
           </ul>
         </nav>
 
