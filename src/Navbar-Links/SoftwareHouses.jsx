@@ -1,15 +1,15 @@
 import React from 'react';
-import softwareHouses from '../data/softwareHouses';
+import softwareHouses from '../data/softwareHousesData';
 import SearchBar from '../components/SearchBar';
 
 const SoftwareHouses = () => {
   return (
     <>
-    <SearchBar/>
     <div className="min-h-screen bg-gradient-to-br from-[#F7FAFC] to-[#E2E8F0] py-12 px-6">
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-10">
         Explore Peshawar's Top Software Houses
       </h1>
+    <SearchBar/>
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {softwareHouses.map((house) => (
           <div

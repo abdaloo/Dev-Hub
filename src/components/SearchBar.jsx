@@ -1,24 +1,27 @@
 import React, { useState } from 'react';
-import softwareHouses from '../data/softwareHouses';
+import softwareHousesData from '../data/softwareHousesData';
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredHouses, setFilteredHouses] = useState(softwareHouses); // assuming softwareHouses is your list of data
+  const [filteredHouses, setFilteredHouses] = useState(softwareHousesData); // assuming softwareHouses is your list of data
 
   const handleSearch = (event) => {
     const term = event.target.value.toLowerCase();
     setSearchTerm(term);
 
-    const filtered = softwareHouses.filter((house) =>
+    const filtered = softwareHousesData.filter((house) =>
       house.name.toLowerCase().includes(term) ||
       house.services.some(service => service.toLowerCase().includes(term)) ||
       house.location.toLowerCase().includes(term)
     );
+    //Changes to be made below
     setFilteredHouses(filtered);
+
+    
   };
 
   const handleFilter = (criteria) => {
-    const filtered = softwareHouses.filter((house) => house.services.includes(criteria));
+    const filtered = softwareHousesData.filter((house) => house.services.includes(criteria));
     setFilteredHouses(filtered);
   };
 
@@ -31,7 +34,7 @@ const SearchBar = () => {
           value={searchTerm}
           onChange={handleSearch}
           placeholder="Search Software Houses..."
-          className="p-2 border rounded-lg w-1/2"
+          className="p-2 border rounded-lg w-screen "
         />
         
         {/* Filter Button */}
@@ -39,7 +42,7 @@ const SearchBar = () => {
           onClick={() => handleFilter('IoT Solutions')} // You can change this to the criteria you want to filter
           className="px-4 py-2 bg-blue-500 text-white rounded-lg"
         >
-          Filter by IoT Solutions
+          Filter
         </button>
       </div>
 

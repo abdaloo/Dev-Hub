@@ -1,4 +1,4 @@
-const softwareHouses = [
+const softwareHousesData = [
     {
       id: 1,
       name: 'MindGigs.PK',
@@ -33,5 +33,5 @@ const softwareHouses = [
     }
   ];
   
-  export default softwareHouses;
+  export default softwareHousesData;
   
