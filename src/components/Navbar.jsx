@@ -27,7 +27,7 @@ function Header() {
             <Link to="/"><li className="hover:text-[#E1EEBC] transition text-sm" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</li></Link>
             <Link to="/about"><li className="hover:text-[#E1EEBC] transition text-sm" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</li></Link>
             <Link to="/softwareHouses"><li className="hover:text-[#E1EEBC] transition text-sm" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Software Houses</li></Link>
-            <Link to="/contact"><li className="hover:text-[#E1EEBC] transition text-sm" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact</li></Link>
+            <Link to="/contact"><li className="hover:text-[#E1EEBC] transition text-sm" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact Us</li></Link>
           </ul>
         </nav>
 
