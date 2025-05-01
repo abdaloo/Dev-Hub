@@ -16,7 +16,7 @@ const HeroSection = () => {
             grow your tech network — all in one place.
           </p>
           <Link to="/softwareHouses">
-            <button className="bg-[#38B2AC] text-[#1A202C] px-6 py-3 rounded-md font-semibold hover:bg-[#319795] focus:outline-none focus:ring-2 focus:ring-[#BEE3F8] transition">
+            <button className="bg-[#328E6E] text-[#fff] px-6 py-3 rounded-md font-semibold hover:bg-[#26775C] focus:outline-none focus:ring-2 focus:ring-[#BEE3F8] transition cursor-pointer">
               Start Exploring
             </button>
           </Link>

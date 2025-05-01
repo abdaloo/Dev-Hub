@@ -3,8 +3,8 @@ import ProfileImage from '/src/assets/IMG_1684.JPG'; // Adjust the path if neede
 
 const ProfileCard = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 p-6">
-      <div className="bg-white rounded-2xl shadow-xl overflow-hidden w-full max-w-sm text-center">
+    <div className="flex justify-center items-center min-h-screen rounded-lg bg-gradient-to-br from-[#FFFFFF] to-[#FFFFFF] p-6">
+      <div className="bg-[#E1EEBC] rounded-2xl shadow-xl overflow-hidden w-full max-w-sm text-center">
         <img 
           src={ProfileImage} 
           alt="Profile" 

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
-import CreateAccountForm from "./CreateAccount";
 import { Link } from "react-router-dom";
 
 const SignInForm = () => {

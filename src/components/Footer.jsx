@@ -12,8 +12,11 @@ function Footer() {
         {/* Logo and Description */}
         <div>
           <div className='flex gap-2 items-center'>
-          <span className="text-white text-2xl mb-1"><SiPaloaltosoftware/></span>
-          <h2 className="text-2xl font-bold mb-2">𝙳𝚎𝚟𝙷𝚞𝚋</h2>
+            <Link to="/" className='flex my-3 gap-2'>
+            {/* <span className="text-white text-2xl mb-1"><SiPaloaltosoftware/></span> */}
+              <img src="./src/assets/coding2-2.png" alt="" className='w-10 mb-1.5 mr-1'/>
+              <h2 className="text-2xl font-bold mb-2">𝙳𝚎𝚟𝙷𝚞𝚋</h2>
+            </Link>
           </div>
           <p className="text-sm">
             DevHub is your go-to directory for exploring software houses in Peshawar.
@@ -47,7 +50,7 @@ function Footer() {
 
       {/* Bottom bar */}
       <div className="text-center mt-10 text-sm border-t border-[#E1EEBC] pt-4">
-        &copy; {new Date().getFullYear()} DevHub. All rights reserved.
+       Copyright &copy; 2024-{new Date().getFullYear()} <b>DevHub</b>. All rights reserved.
       </div>
     </footer>
   );

@@ -1,9 +1,10 @@
 import React from 'react';
 import ProfileCard from '../components/ProfileCard';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <main className="bg-gray-50 py-12">
+    <main className="bg-[#E1EEBC] py-12">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Hero Section */}
@@ -88,19 +89,19 @@ const About = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="bg-[#38B2AC] text-center py-8 text-white rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4">Join DevHub Today!</h2>
-          <p className="text-lg mb-6">Sign up to explore software houses, discover career opportunities, and connect with like-minded professionals.</p>
-          <a href="/signup" className="bg-[#1A202C] text-[#38B2AC] px-6 py-3 rounded-md font-semibold hover:bg-[#319795] transition">
+        <section className="bg-[#ffffff] text-center py-8 text-white rounded-lg">
+          <h2 className="text-3xl font-semibold mb-4 text-black">Join DevHub Today!</h2>
+          <p className="text-lg mb-6 text-black">Sign up to explore software houses, discover career opportunities, and connect with like-minded professionals.</p>
+          <Link to="/SignUpForm" className="bg-[#328E6E] text-[#fff] px-6 py-3 rounded-md font-semibold hover:bg-[#26775C] transition">
             Get Started
-          </a>
+          </Link>
         </section>
 
         {/* Contact Information */}
         <section className="text-center mt-12">
           <h2 className="text-3xl font-semibold text-[#2D3748] mb-6">Contact Us</h2>
           <p className="text-lg text-[#4A5568]">
-            Have questions or business inquiries? Reach out to us at <a href="mailto:contact@devhub.com" className="text-[#38B2AC]">abdalhussain5790@gmail.com</a>.
+            Have questions or business inquiries? Reach out to us at <a href="mailto:abdalhussain5790@gmail.com" className="text-[#38B2AC]">abdalhussain5790@gmail.com</a>.
           </p>
         </section>
         
