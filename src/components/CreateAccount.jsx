@@ -129,13 +129,22 @@ const CreateAccountForm = () => {
             <label className="block text-sm font-medium text-gray-700">
               Re-enter password
             </label>
-            <input
-              name="confirmPassword"
-              type={showPassword ? "text" : "password"}
-              value={formData.confirmPassword}
-              onChange={handleChange}
-              className="w-full mt-1 border border-gray-400 p-2 rounded focus:outline-none focus:ring-[#328E6E] focus:ring-1"
-            />
+            <div className="relative">
+              <input
+                name="confirmPassword"
+                type={showPassword ? "text" : "password"}
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                className="w-full mt-1 border border-gray-400 p-2 rounded focus:outline-none focus:ring-[#328E6E] focus:ring-1"
+              />
+              <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-2 top-4 text-gray-500"
+                >
+                  {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                </button>
+            </div>
             {errors.confirmPassword && (
               <p className="text-red-600 text-sm">{errors.confirmPassword}</p>
             )}
