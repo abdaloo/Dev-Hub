@@ -32,7 +32,7 @@ const ContactForm = () => {
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      // ✅ Save to Local Storage
+      // Save to Local Storage
       const storedMessages = JSON.parse(localStorage.getItem('devhubMessages')) || [];
       storedMessages.push(formData);
       localStorage.setItem('devhubMessages', JSON.stringify(storedMessages));
@@ -48,7 +48,7 @@ const ContactForm = () => {
   
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F7FAFC] to-[#EDF2F7] py-16 px-6">
+    <div className="min-h-screen bg-gradient-to-br from-[#E1EEBC] to-[#E1EEBC] py-16 px-6">
       <div className="max-w-3xl mx-auto bg-white shadow-xl rounded-2xl p-8">
         <h2 className="text-3xl font-bold text-center text-[#2D3748] mb-6">
           Get in Touch with DevHub
@@ -70,7 +70,7 @@ const ContactForm = () => {
               placeholder="Enter your name"
               className={`w-full px-4 py-3 rounded-lg border ${
                 errors.name ? 'border-red-500' : 'border-gray-300'
-              } focus:ring-2 focus:ring-[#38B2AC] outline-none`}
+              } focus:ring-2 focus:ring-[#328E6E] outline-none`}
             />
             {errors.name && (
               <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -90,7 +90,7 @@ const ContactForm = () => {
               placeholder="Enter your email"
               className={`w-full px-4 py-3 rounded-lg border ${
                 errors.email ? 'border-red-500' : 'border-gray-300'
-              } focus:ring-2 focus:ring-[#38B2AC] outline-none`}
+              } focus:ring-2 focus:ring-[#328E6E] outline-none`}
             />
             {errors.email && (
               <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -110,7 +110,7 @@ const ContactForm = () => {
               placeholder="Write your message..."
               className={`w-full px-4 py-3 rounded-lg border ${
                 errors.message ? 'border-red-500' : 'border-gray-300'
-              } focus:ring-2 focus:ring-[#38B2AC] outline-none resize-none`}
+              } focus:ring-2 focus:ring-[#328E6E] outline-none resize-none`}
             ></textarea>
             {errors.message && (
               <p className="text-red-500 text-sm mt-1">{errors.message}</p>
@@ -121,7 +121,7 @@ const ContactForm = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-[#38B2AC] hover:bg-[#319795] text-white px-8 py-3 rounded-lg font-semibold transition cursor-pointer"
+              className="bg-[#328E6E] hover:bg-[#26775C] text-white px-8 py-3 rounded-lg font-semibold transition cursor-pointer"
             >
               Send Message
             </button>

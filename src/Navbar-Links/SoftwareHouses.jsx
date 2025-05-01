@@ -5,7 +5,7 @@ import SearchBar from '../components/SearchBar';
 const SoftwareHouses = () => {
   return (
     <>
-    <div className="min-h-screen bg-gradient-to-br from-[#F7FAFC] to-[#E2E8F0] py-12 px-6">
+    <div className="min-h-screen bg-gradient-to-br from-[#E1EEBC] to-[#E1EEBC] py-12 px-6">
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-10">
         Explore Peshawar's Top Software Houses
       </h1>
@@ -25,7 +25,7 @@ const SoftwareHouses = () => {
               {house.services.map((service, index) => (
                 <span
                   key={index}
-                  className="text-xs bg-[#4ECDC4] text-white px-2 py-1 rounded-full"
+                  className="text-xs bg-[#328E6E] text-white px-2 py-1 rounded-full"
                 >
                   {service}
                 </span>
@@ -35,7 +35,8 @@ const SoftwareHouses = () => {
               href={house.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#1A202C] text-white px-4 py-2 rounded-md hover:bg-[#2D3748] transition"
+              // className="inline-block bg-[#1A202C] text-white px-4 py-2 rounded-md hover:bg-[#2D3748] transition"
+              className="bg-[#E1EEBC] text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition mt-5 cursor-pointer border-[#328E6E]"
             >
               Visit Website
             </a>

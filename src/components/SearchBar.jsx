@@ -40,7 +40,7 @@ const SearchBar = () => {
         {/* Filter Button */}
         <button
           onClick={() => handleFilter('IoT Solutions')} // You can change this to the criteria you want to filter
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg"
+          className="px-4 py-2 bg-[#328E6E] hover:bg-[#26775C] text-white rounded-lg"
         >
           Filter
         </button>

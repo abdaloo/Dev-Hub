@@ -3,7 +3,7 @@ const softwareHousesData = [
       id: 1,
       name: 'MindGigs.PK',
       description: 'A tech company offering cutting-edge training and software development services in the heart of Peshawar IT Park.',
-      services: ['Software Development', 'IT Training', 'Web & Mobile Apps'],
+      services: ['Web & Mobile Apps','Software Development','IT Training'],
       location: 'Peshawar IT Park, Board Bazar',
       website: 'https://mindgigs.com.pk',
     },
