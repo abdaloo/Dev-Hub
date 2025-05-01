@@ -7,6 +7,9 @@ import SoftwareHouses from "./Navbar-Links/SoftwareHouses";
 import Contact from "./Navbar-Links/Contact";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SignUpForm from "./components/SignIn";
+import CreateAccountForm from "./components/CreateAccount";
+
 
 function App() {
 
@@ -19,6 +22,8 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/softwareHouses" element={<SoftwareHouses/>}/>
           <Route path="/contact" element={<><Contact /><ToastContainer position="bottom-right" autoClose={3000} /></>}/>
+          <Route path="/SignUpForm" element={<SignUpForm/>}/>
+          <Route path="/CreateAccountForm" element={<CreateAccountForm/>}/>
         </Routes>
       <Footer/>
     </BrowserRouter>

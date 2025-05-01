@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { SiPaloaltosoftware } from 'react-icons/si';
 import { useState } from 'react';
+import SignUpForm from './SignIn';
+
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,12 +30,14 @@ function Header() {
 
         {/* Sign Up / Log In */}
         <div className="hidden md:flex gap-4">
-          <button className="bg-white text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition">
-            Sign Up
-          </button>
-          <button className="bg-[#E1EEBC] text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-[#d3e29b] transition">
+          <Link to="/SignUpForm">
+            <button className="bg-white text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition">
+              Sign in
+            </button>
+          </Link>
+          {/* <button className="bg-[#E1EEBC] text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-[#d3e29b] transition">
             Login
-          </button>
+          </button> */}
         </div>
 
         {/* Mobile Hamburger Button */}
