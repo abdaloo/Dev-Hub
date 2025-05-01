@@ -11,14 +11,19 @@ function Footer() {
         
         {/* Logo and Description */}
         <div>
-          <div className='flex gap-2'>
-          <span ><SiPaloaltosoftware className="text-white text-xl "/></span>
-          <h2 className="text-2xl font-bold mb-2">DevHub</h2>
+          <div className='flex gap-2 items-center'>
+          <span className="text-white text-2xl mb-1"><SiPaloaltosoftware/></span>
+          <h2 className="text-2xl font-bold mb-2">𝙳𝚎𝚟𝙷𝚞𝚋</h2>
           </div>
           <p className="text-sm">
             DevHub is your go-to directory for exploring software houses in Peshawar.
             Connect with IT companies, find jobs, and grow in tech — all in one place.
           </p>
+      
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-white text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition mt-5 cursor-pointer">
+              Back To Top
+            </button>
+          
         </div>
 
         {/* Quick Links */}
@@ -42,7 +47,7 @@ function Footer() {
 
       {/* Bottom bar */}
       <div className="text-center mt-10 text-sm border-t border-[#E1EEBC] pt-4">
-        © {new Date().getFullYear()} DevHub. All rights reserved.
+        &copy; {new Date().getFullYear()} DevHub. All rights reserved.
       </div>
     </footer>
   );
