@@ -18,10 +18,10 @@ const SearchBar = () => {
     setFilteredHouses(filtered);    
   };
 
-  const handleFilter = (criteria) => {
-    const filtered = softwareHousesData.filter((house) => house.services.includes(criteria));
-    setFilteredHouses(filtered);
-  };
+  // const handleFilter = (criteria) => {
+  //   const filtered = softwareHousesData.filter((house) => house.services.includes(criteria));
+  //   setFilteredHouses(filtered);
+  // };
 
   return (
     <div className="p-6 space-y-6">
@@ -36,12 +36,12 @@ const SearchBar = () => {
         />
         
         {/* Filter Button */}
-        <button
+        {/* <button
           onClick={() => handleFilter('IoT Solutions')} // You can change this to the criteria you want to filter
           className="px-4 py-2 bg-[#328E6E] hover:bg-[#26775C] text-white rounded-lg"
         >
           Filter
-        </button>
+        </button> */}
       </div>
 
       {/* Display filtered software houses */}

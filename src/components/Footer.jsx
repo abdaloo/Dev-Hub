@@ -33,7 +33,7 @@ function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            <li><Link to="/" className="hover:text-white">Home</Link></li>
+            <li><Link to="/" className="hover:text-white" >Home</Link></li>
             <li><Link to="/about" className="hover:text-white">About</Link></li>
             <li><Link to="/softwareHouses" className="hover:text-white">Software Houses</Link></li>
             <li><Link to="/contact" className="hover:text-white">Contact</Link></li>

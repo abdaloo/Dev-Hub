@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { SiPaloaltosoftware } from 'react-icons/si';
 import { useState } from 'react';
-import SignUpForm from './SignIn';
+
 
 
 function Header() {
@@ -24,10 +24,26 @@ function Header() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex">
           <ul className="flex gap-6 text-[18px] text-white items-center font-semibold">
-            <Link to="/"><li className="hover:text-[#E1EEBC] transition text-sm" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</li></Link>
-            <Link to="/about"><li className="hover:text-[#E1EEBC] transition text-sm" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</li></Link>
-            <Link to="/softwareHouses"><li className="hover:text-[#E1EEBC] transition text-sm" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Software Houses</li></Link>
-            <Link to="/contact"><li className="hover:text-[#E1EEBC] transition text-sm" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact Us</li></Link>
+            <Link to="/">
+            <li className="hover:text-[#E1EEBC] transition text-sm" 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >Home</li>
+            </Link>
+            <Link to="/about">
+            <li className="hover:text-[#E1EEBC] transition text-sm" 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >About</li>
+            </Link>
+            <Link to="/softwareHouses">
+            <li className="hover:text-[#E1EEBC] transition text-sm" 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >Software Houses</li>
+            </Link>
+            <Link to="/contact">
+            <li className="hover:text-[#E1EEBC] transition text-sm" 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+               >Contact Us</li>
+            </Link>
           </ul>
         </nav>
 
@@ -69,7 +85,7 @@ function Header() {
           {/* Mobile Buttons */}
           <div className="mt-4 flex flex-col items-center gap-3">
             <button className="bg-white text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition">
-              Sign in
+              <Link to="/SignUpForm">Sign in</Link>
             </button>
             {/* <button className="bg-[#E1EEBC] text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-[#d3e29b] transition">
               Login

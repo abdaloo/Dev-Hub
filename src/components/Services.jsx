@@ -6,11 +6,11 @@ const services = [
     description: 'Search and browse verified IT companies across Peshawar.',
     icon: '🔍',
   },
-  {
-    title: 'Location Map',
-    description: 'Visualize software house locations via Google Maps integration.',
-    icon: '📍',
-  },
+  // {
+  //   title: 'Location Map',
+  //   description: 'Visualize software house locations via Google Maps integration.',
+  //   icon: '📍',
+  // },
   {
     title: 'Company Profiles',
     description: 'Detailed company pages with services, contact info, and more.',
@@ -21,16 +21,16 @@ const services = [
     description: 'Browse job opportunities posted by listed companies.',
     icon: '💼',
   },
-  {
-    title: 'Admin Panel',
-    description: 'Easily manage software house listings and backend data.',
-    icon: '🛠️',
-  },
-  {
-    title: 'Responsive Design',
-    description: 'Enjoy a smooth experience on both desktop and mobile devices.',
-    icon: '📱',
-  },
+  // {
+  //   title: 'Admin Panel',
+  //   description: 'Easily manage software house listings and backend data.',
+  //   icon: '🛠️',
+  // },
+  // {
+  //   title: 'Responsive Design',
+  //   description: 'Enjoy a smooth experience on both desktop and mobile devices.',
+  //   icon: '📱',
+  // },
 ];
 
 function Services() {
