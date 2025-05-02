@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import softwareHousesData from '../data/softwareHousesData';
+import { FaLocationDot } from "react-icons/fa6";
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -14,10 +15,7 @@ const SearchBar = () => {
       house.services.some(service => service.toLowerCase().includes(term)) ||
       house.location.toLowerCase().includes(term)
     );
-    //Changes to be made below
-    setFilteredHouses(filtered);
-
-    
+    setFilteredHouses(filtered);    
   };
 
   const handleFilter = (criteria) => {
@@ -47,18 +45,45 @@ const SearchBar = () => {
       </div>
 
       {/* Display filtered software houses */}
-      <div className="mt-6 space-y-4">
+      <div className="mt-6 space-y-4 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {filteredHouses.length > 0 ? (
           filteredHouses.map((house) => (
-            <div key={house.id} className="p-4 border rounded-lg">
-              <h3 className="text-xl font-bold">{house.name}</h3>
-              <p className="text-sm">{house.description}</p>
-              <p className="text-sm"><strong>Location:</strong> {house.location}</p>
-              <p className="text-sm"><strong>Services:</strong> {house.services.join(', ')}</p>
-              <a href={house.website} target="_blank" rel="noopener noreferrer" className="text-blue-500">
+            <a
+                href={house.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-[#E1EEBD] px-4 py-2 hover:rounded-2xl  font-semibold transition mt-5 cursor-pointer "
+              >
+            <div
+              key={house.id}
+              className="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition"
+            >
+            
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">{house.name}</h2>
+              <p className="text-gray-600 text-sm mb-3">{house.description}</p>
+              <p className="text-sm text-gray-500 mb-1 flex items-center gap-2">
+              <FaLocationDot className='text-[#f4431f]'/> <span className="font-medium text-black">{house.location}</span>
+              </p>
+              <div className="flex flex-wrap gap-2 mt-3 mb-4">
+                {house.services.map((service, index) => (
+                  <span
+                    key={index}
+                    className="text-xs bg-[#E1EEBD] text-[#328E6E] px-2 py-1 rounded-full"
+                  >
+                    {service}
+                  </span>
+                ))}
+              </div>
+              <a
+                href={house.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#328E6E] text-[#E1EEBD] px-4 py-2 rounded-md font-semibold hover:bg-[#26775C] transition mt-5 cursor-pointer border-[#328E6E]"
+              >
                 Visit Website
               </a>
             </div>
+              </a>
           ))
         ) : (
           <p>No software houses found.</p>
