@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SiPaloaltosoftware } from 'react-icons/si';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 
 
@@ -8,13 +8,40 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        // scrolling down
+        setShowNavbar(false);
+      } else {
+        // scrolling up
+        setShowNavbar(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className="bg-[#328E6E] p-4 sticky top-0 z-50 shadow-md">
+    <header className={`p-4 shadow-md sticky top-0 left-0 w-full z-50 transition-transform duration-300 ${
+      showNavbar ? "translate-y-0" : "-translate-y-full"
+    } bg-[#328E6E] shadow`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
 
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Link to='/' className='flex gap-3'>
+          <Link to='/' className='flex gap-3' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <img src="./src/assets/coding2-2.png" alt="" className='w-10'/> 
           {/* <span><SiPaloaltosoftware className="text-white text-2xl" /></span> */}
             <h1 className="text-4xl text-[#E1EEBC] font-bold">𝙳𝚎𝚟𝙷𝚞𝚋</h1>
