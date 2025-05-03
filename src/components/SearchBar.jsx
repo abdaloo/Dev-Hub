@@ -32,7 +32,7 @@ const SearchBar = () => {
           value={searchTerm}
           onChange={handleSearch}
           placeholder="Search Software Houses..."
-          className="p-2 border rounded-lg w-screen "
+          className="p-2 border rounded-lg w-150 m-auto focus:ring-[#328E6E] focus:outline-none focus:ring-2"
         />
         
         {/* Filter Button */}
@@ -59,7 +59,7 @@ const SearchBar = () => {
               className="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition"
             >
             
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">{house.name}</h2>
+              <h2 className="text-2xl font-semibold text-[#328E6E] mb-2 ">{house.name}</h2>
               <p className="text-gray-600 text-sm mb-3">{house.description}</p>
               <p className="text-sm text-gray-500 mb-1 flex items-center gap-2">
               <FaLocationDot className='text-[#f4431f]'/> <span className="font-medium text-black">{house.location}</span>
@@ -74,14 +74,14 @@ const SearchBar = () => {
                   </span>
                 ))}
               </div>
-              <a
+              {/* <a
                 href={house.website}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#328E6E] text-[#E1EEBD] px-4 py-2 rounded-md font-semibold hover:bg-[#26775C] transition mt-5 cursor-pointer border-[#328E6E]"
               >
                 Visit Website
-              </a>
+              </a> */}
             </div>
               </a>
           ))
