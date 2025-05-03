@@ -48,18 +48,24 @@ const SearchBar = () => {
       <div className="mt-6 space-y-4 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {filteredHouses.length > 0 ? (
           filteredHouses.map((house) => (
-            <a
-                href={house.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" text-[#E1EEBD] px-4 py-2 hover:rounded-2xl  font-semibold transition mt-5 cursor-pointer "
-              >
             <div
               key={house.id}
               className="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition"
             >
             
-              <h2 className="text-2xl font-semibold text-[#328E6E] mb-2 ">{house.name}</h2>
+            <a
+                href={house.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-[#E1EEBD] hover:rounded-2xl  font-semibold transition mt-5 cursor-pointer  "
+              >
+                <div className='text-center h-40'>
+                  <img src={house.imageUrl} className='max-w-40 w-70 m-auto my-5 h-20 object-contain' alt="SoftwareHouse-logo" />
+                  <h2 className="inline-block text-2xl font-semibold text-[#328E6E] hover:text-[#306250] mb-2 transition-all duration-100 hover:border-b-2 border-[#306250] ">
+                  {house.name}
+                  </h2>
+                </div>
+                </a>
               <p className="text-gray-600 text-sm mb-3">{house.description}</p>
               <p className="text-sm text-gray-500 mb-1 flex items-center gap-2">
               <FaLocationDot className='text-[#f4431f]'/> <span className="font-medium text-black">{house.location}</span>
@@ -83,7 +89,7 @@ const SearchBar = () => {
                 Visit Website
               </a> */}
             </div>
-              </a>
+              
           ))
         ) : (
           <p>No software houses found.</p>
