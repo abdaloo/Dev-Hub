@@ -80,14 +80,6 @@ const SearchBar = () => {
                   </span>
                 ))}
               </div>
-              {/* <a
-                href={house.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#328E6E] text-[#E1EEBD] px-4 py-2 rounded-md font-semibold hover:bg-[#26775C] transition mt-5 cursor-pointer border-[#328E6E]"
-              >
-                Visit Website
-              </a> */}
             </div>
               
           ))

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import heroimage from "public/Hero-Image.jpg"
 
 const HeroSection = () => {
   return (
@@ -25,7 +26,7 @@ const HeroSection = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2">
           <img
-            src="./src/assets/Hero-Image.jpg"
+            src="/Hero-Image.jpg"
             alt="Hero-Image"
             className="w-full h-auto rounded-lg shadow-lg"
             loading="lazy"

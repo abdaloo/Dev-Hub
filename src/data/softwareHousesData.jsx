@@ -251,6 +251,15 @@ const softwareHousesData = [
       location: 'Softech Square Software Solutions, Peshawar , Pvt Ltd FF 103 Deans Trade Center',
       website: 'https://www.softechsquare.com/',
       imageUrl: 'src/assets/Software-house logos/soft square.png'
+    },
+    {
+      id: 29,
+      name: 'Xtremes Software Services Private Ltd.',
+      description: 'Xtreme Software Services Pvt Ltd, based in Peshawar with a branch in Abu Dhabi, offers top-tier business software solutions across Pakistan. Their services include ERP systems, CRM, web development, digital marketing, Android apps, and more.',
+      services: ["Web Design & Development", "Software Development", "WordPress Development", "Graphics Designing", "Digital Marketing", "Mobile App Solutions"],
+      location: 'Abdara Rd, Peshawar Pakistan.',
+      website: 'https://xtremessoft.com/',
+      imageUrl: 'src/assets/Software-house logos/xtremessoft.png'
     }
   ];
   
