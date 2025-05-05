@@ -14,7 +14,7 @@ function Footer() {
           <div className='flex gap-2 items-center'>
             <Link to="/" className='flex my-3 gap-2'>
             {/* <span className="text-white text-2xl mb-1"><SiPaloaltosoftware/></span> */}
-              <img src="./src/assets/coding2-2.png" alt="" className='w-10 mb-1.5 mr-1'/>
+              <img src="/coding2-2.png" alt="" className='w-10 mb-1.5 mr-1'/>
               <h2 className="text-2xl font-bold mb-2">𝙳𝚎𝚟𝙷𝚞𝚋</h2>
             </Link>
           </div>
