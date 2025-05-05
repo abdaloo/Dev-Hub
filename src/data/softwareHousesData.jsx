@@ -24,7 +24,7 @@ const softwareHousesData = [
       services: ['Web Design and Development', 'Mobile App Development', 'Software Development','Digital Marketing','Print Media Design','Video Production','IT Trainings'],
       location: 'Office 43 KP IT Park Near NIC Board Bazar Peshawar, Peshawar',
       website: 'https://softbreeze.org/',
-      imageUrl: 'src/assets/Software-house logos/soft_breeze_logo.jpeg'
+      imageUrl: 'public/software-house-logos/soft_breeze_logo.jpeg'
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ const softwareHousesData = [
       services: ['Content Management System', 'Health Management Information System'],
       location: 'KPIT Park, PTCL Training Center, Canal Town Peshawar, Khyber Pakhtunkhwa 25000',
       website: 'https://g4techno.com/',
-      imageUrl: 'src/assets/Software-house logos/g4.png'
+      imageUrl: 'public/software-house-logos/g4.png'
     }
     ,
     {
@@ -43,7 +43,7 @@ const softwareHousesData = [
       services: ['PPC Services','SEO Services','SMM Services','Web Design', 'Web Development', 'Graphic Designing', 'Mobile App Development'],
       location: 'Office 409 , Arbab Road Stop, Peshawar, KP 25000, PK',
       website: 'http://techeasesol.com/',
-      imageUrl: 'src/assets/Software-house logos/techease_solutions_inc_logo.jpeg'
+      imageUrl: 'public/software-house-logos/techease_solutions_inc_logo.jpeg'
     },
     {
       id: 6,
@@ -52,7 +52,7 @@ const softwareHousesData = [
       services: ['TTMS','Traffic Reports','KTP Public Ticket',' Driving License Fee Management System'],
       location: ' Head Office: Plot No. 193 Opposite Shomali Market Police Station Industrial Estate Hayatabad Peshawar',
       website: 'http://a2zepayments.com/',
-      imageUrl: 'src/assets/Software-house logos/AZ_0.png'
+      imageUrl: 'public/software-house-logos/AZ_0.png'
     },
     {
       id: 7,
@@ -61,7 +61,7 @@ const softwareHousesData = [
       services: ['SOFTWARE DEVELOPMENT', 'MOBILE APP DEVELOPMENT', 'TECHNOLOGY CONSULTING SERVICES','CYBER SECURITY SERVICES'],
       location: 'Office #: 504-505, C-Block, 5th Floor, City Towers, Main University Road, Jahngir Abad, Peshawar',
       website: 'https://www.stepnexs.com/home',
-      imageUrl: 'src/assets/Software-house logos/stepnexs_300.jpg'
+      imageUrl: 'public/software-house-logos/stepnexs_300.jpg'
     },
     {
       id: 8,
@@ -70,7 +70,7 @@ const softwareHousesData = [
       services: ['AI/ML', 'Web Development', 'Mobile App Development','UX/UI','Data Engineering','Data Analytics'],
       location: 'Office 7B, 5th floor, Mall of KPK, University Road, Peshawar',
       website: 'https://k2x.tech/',
-      imageUrl: 'src/assets/Software-house logos/K2X-logo.svg'
+      imageUrl: 'public/software-house-logos/K2X-logo.svg'
     },
     {
       id: 9,
@@ -79,7 +79,7 @@ const softwareHousesData = [
       services: ['Android app development', ' Web development', 'Wordpress Development','SEO','ERP Softwares',' Search Engine Marketing'],
       location: 'ptcl training center, University Road Board bazar, Peshawar',
       website: 'https://www.facebook.com/ImpactSoftwares/',
-      imageUrl: 'src/assets/Software-house logos/Impact Softwares.png'
+      imageUrl: 'public/software-house-logos/Impact Softwares.png'
     },
     {
       id: 10,
@@ -88,7 +88,7 @@ const softwareHousesData = [
       services: ['App and game development.', ' Web development', 'Web designing','Graphic designing and marketing'],
       location: 'PTCL Training Centre، 1st Floor, KP IT Park، University Rd, Canal Town, Peshawar',
       website: 'https://thenerdcamp.com/',
-      imageUrl: 'src/assets/Software-house logos/THE NERD CAMP.png'
+      imageUrl: 'public/software-house-logos/THE NERD CAMP.png'
     },
     {
       id: 11,
@@ -97,7 +97,7 @@ const softwareHousesData = [
       services: ["Domain Hosting", "Digital Marketing", "Web Development", "Mobile Application", "Graphic Designing", "Software Apps", "E-Commerce", "Content Writing", "FYP Ideas"],
       location: 'PTCL Training Center Peshawar Board, Pakistan',
       website: 'http://www.itartificer.com',
-      imageUrl: 'src/assets/Software-house logos/itarticer.jpg'
+      imageUrl: 'public/software-house-logos/itarticer.jpg'
     },
     {
       id: 12,
@@ -106,7 +106,7 @@ const softwareHousesData = [
       services:["Game Development", "App Development", "Web Development", "Digital Marketing"],
       location: 'KPIT Park, PTCL Training Center, Canal Town Peshawar,',
       website: 'https://www.aptechmedia.com/',
-      imageUrl: 'src/assets/Software-house logos/aptech.jpg'
+      imageUrl: 'public/software-house-logos/aptech.jpg'
     },
     {
       id: 13,
@@ -115,7 +115,7 @@ const softwareHousesData = [
       services:["Web Development", "Web Designing", "MIS Solutions", "SEO", "App Development", "E-Gov Solutions", "Civic Solutions", "Managed Services"],
       location: 'FF 244 Deans Trade Center, Saddar Bazar Peshawar',
       website: 'https://multibizservices.com/',
-      imageUrl: 'src/assets/Software-house logos/Rar_0.png'
+      imageUrl: 'public/software-house-logos/Rar_0.png'
     },
     {
       id: 14,
@@ -124,7 +124,7 @@ const softwareHousesData = [
       services:["Scope Management", "Time Management", "Cost Management", "Specification Design", "Change Control", "Quality Management", "Resource Management", "Communications Management", "Risk Management", "Procurement Management", "Implementation Management"],
       location: 'MindGigs, PTCL Training center, KPIT Park, Board Bazar Canal Town, Peshawar.',
       website: 'https://mindgigspk.com/',
-      imageUrl: 'src/assets/Software-house logos/Capture.png.bv_resized_desktop.png.bv.webp'
+      imageUrl: 'public/software-house-logos/Capture.png.bv_resized_desktop.png.bv.webp'
     },
     {
       id: 15,
@@ -133,7 +133,7 @@ const softwareHousesData = [
       services:["24/7 Global Help Desk", "BPO Services", "Mobile App Development", "Web App Development", "Custom Software Development", "Product Development"],
       location: 'Office # 19, KPK IT Park, RTC PTCL, University Road Peshawar.',
       website: 'https://pkols.com/',
-      imageUrl: 'src/assets/Software-house logos/pkols-logo.png'
+      imageUrl: 'public/software-house-logos/pkols-logo.png'
     },
     {
       id: 16,
@@ -142,7 +142,7 @@ const softwareHousesData = [
       services:["Mobile App Development", "Web App Development"],
       location: 'PTCL TRAINING CENTER, Office # 3,4 KP IT PARK, University Rd',
       website: 'https://sapphireglobaltech.com/',
-      imageUrl: 'src/assets/Software-house logos/Sapphire.png'
+      imageUrl: 'public/software-house-logos/Sapphire.png'
     },
     {
       id: 17,
@@ -151,7 +151,7 @@ const softwareHousesData = [
       services: ["Web Portals", "Real-Time Web Apps", "Social Apps", "Community Apps", "Analytical Apps", "Online Databases Websites", "Hybrid Apps", "Mobile Apps", "SEO"],
       location: 'C3 4th Floor New Diljan Arcade Near Hayatabad Ring Road Peshawar',
       website: 'https://wqsoftwares.com/',
-      imageUrl: 'src/assets/Software-house logos/Wp.png'
+      imageUrl: 'public/software-house-logos/Wp.png'
     },
     {
       id: 18,
@@ -160,7 +160,7 @@ const softwareHousesData = [
       services: ["Software Development", "App Development", "Cloud Computing", "ERP", "Data Science", "Capacity Building", "Project Management", "Testing & Validation Services", "Digitization"],
       location: 'Plot No 2, Opposite Q Mall, Adjacent Street Tehkal Bala BRT Station, University Road, Peshawar',
       website: 'https://ifastsolutions.com/',
-      imageUrl: 'src/assets/Software-house logos/iFast.png'
+      imageUrl: 'public/software-house-logos/iFast.png'
     },
     {
       id: 19,
@@ -169,7 +169,7 @@ const softwareHousesData = [
       services: ["Web Development", "App Development","Designing"],
       location: 'Deans Trade Center, Kalibari Peshawar Cantonment, Peshawar',
       website: 'https://www.linkedin.com/company/app-storm-studio-1/',
-      imageUrl: 'src/assets/Software-house logos/App-storm.jpeg'
+      imageUrl: 'public/software-house-logos/App-storm.jpeg'
     },
     {
       id: 20,
@@ -178,7 +178,7 @@ const softwareHousesData = [
       services: ["Enterprise Fleet Management", "Enterprise Inventory Management", "Point of Sale (POS)", "Enterprise Manufacturing System", "Enterprise Project Management", "Web Applications Development"],
       location: 'Deans Trade Center Peshawar  ',
       website: 'https://precisetec.ca/',
-      imageUrl: 'src/assets/Software-house logos/precise-logo-5.png'
+      imageUrl: 'public/software-house-logos/precise-logo-5.png'
     },
     {
       id: 21,
@@ -187,7 +187,7 @@ const softwareHousesData = [
       services: ["Software Development Services", "Enterprise Resource Planning System (ERP)", "Web Application Development", "Mobile Application Development", "IT Consultancy"],
       location: 'Deans Trade Center Peshawar  ',
       website: 'https://www.nsdevelopers.com/',
-      imageUrl: 'src/assets/Software-house logos/NSDev.png'
+      imageUrl: 'public/software-house-logos/NSDev.png'
     },
     {
       id: 22,
@@ -196,7 +196,7 @@ const softwareHousesData = [
       services: ["Veevo SMS API", "Veevo Voice API", "Veevo Whatsapp API", "Web Hosting", "Mobile Advertisement", "Web Application Development", "Mobile Application Development"],
       location: 'Veevo Tech, Office#4, 4th Floor, Block-A, Jawad Towers, University Road, Peshawar',
       website: 'https://veevotech.com/',
-      imageUrl: 'src/assets/Software-house logos/VT-Logo1.png'
+      imageUrl: 'public/software-house-logos/VT-Logo1.png'
     },
     {
       id: 23,
@@ -205,7 +205,7 @@ const softwareHousesData = [
       services: ["Software Development","Digital Marketing","Graphics Designing","Customer Support","Web Application Development", "Mobile Application Development"],
       location: 'FF 38 First Floor KPIT Park Board Bazar Peshawar',
       website: 'https://tapsol.com/',
-      imageUrl: 'src/assets/Software-house logos/tapsol.png'
+      imageUrl: 'public/software-house-logos/tapsol.png'
     },
     {
       id: 24,
@@ -214,7 +214,7 @@ const softwareHousesData = [
       services: ["Digital Transformation", "Digital Marketing", "AI Consultancy", "Vocational and Technical Training", "End to End Business Consultancy", "Web Development", "Mobile Apps Development", "Content Writing and Creation", "UI/UX Designing", "User Acceptance Testing (UAT)", "System Integration", "Data Migration", "E-Book Translation", "E-Commerce"],
       location: 'Office: 5,6 KP- IT Park PTCL Training Center Peshawar Pakistan',
       website: 'https://strings.com.pk/',
-      imageUrl: 'src/assets/Software-house logos/stringspk_logo.jpeg'
+      imageUrl: 'public/software-house-logos/stringspk_logo.jpeg'
     },
     {
       id: 25,
@@ -223,7 +223,7 @@ const softwareHousesData = [
       services: ["Odoo ERP", "Business4x ERP & CRM", "Cloud Computing", "Web Development", "Digital Marketing"],
       location: 'IT Park, Ptcl training center, Peshawar, Pakistan',
       website: 'https://erisp.net/',
-      imageUrl: 'src/assets/Software-house logos/erisp-favicon.png'
+      imageUrl: 'public/software-house-logos/erisp-favicon.png'
     },
     {
       id: 26,
@@ -232,7 +232,7 @@ const softwareHousesData = [
       services: ["Designing","Marketing","E-Commerce Services"],
       location: 'Office 30-31, I.T Park, PTCL Training Center, Board Bazaar, Peshawar',
       website: 'https://kraftersonline.com/',
-      imageUrl: 'src/assets/Software-house logos/krafters-Logo-512x493-Black-BG-Full-riot.jpg'
+      imageUrl: 'public/software-house-logos/krafters-Logo-512x493-Black-BG-Full-riot.jpg'
     },
     {
       id: 27,
@@ -241,7 +241,7 @@ const softwareHousesData = [
       services: ["AI","Web Development","Mobile App Development","UI/UX","Blockchain Development"],
       location: 'IT Park, PTCL Training Center, Peshawar, KP, Pakistan',
       website: 'https://www.encoderbytes.com/',
-      imageUrl: 'src/assets/Software-house logos/EncoderBytes.png'
+      imageUrl: 'public/software-house-logos/EncoderBytes.png'
     },
     {
       id: 28,
@@ -250,7 +250,7 @@ const softwareHousesData = [
       services: ["Web Development","Mobile App Development","UI/UX","Google Ads Expert","SEO & Content Writing","Graphic Desiging"],
       location: 'Softech Square Software Solutions, Peshawar , Pvt Ltd FF 103 Deans Trade Center',
       website: 'https://www.softechsquare.com/',
-      imageUrl: 'src/assets/Software-house logos/soft square.png'
+      imageUrl: 'public/software-house-logos/soft square.png'
     },
     {
       id: 29,
@@ -259,7 +259,7 @@ const softwareHousesData = [
       services: ["Web Design & Development", "Software Development", "WordPress Development", "Graphics Designing", "Digital Marketing", "Mobile App Solutions"],
       location: 'Abdara Rd, Peshawar Pakistan.',
       website: 'https://xtremessoft.com/',
-      imageUrl: 'src/assets/Software-house logos/xtremessoft.png'
+      imageUrl: 'public/software-house-logos/xtremessoft.png'
     }
   ];
   
