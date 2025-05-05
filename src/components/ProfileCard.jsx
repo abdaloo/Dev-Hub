@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileImage from '/src/assets/IMG_1684.JPG'; // Adjust the path if needed
+import ProfileImage from '/abdal.JPG'; // Adjust the path if needed
 
 const ProfileCard = () => {
   return (

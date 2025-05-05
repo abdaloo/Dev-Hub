@@ -15,7 +15,7 @@ const softwareHousesData = [
       services: ['Digital Marketing', 'Web Designing', 'Graphic Designing'],
       location: 'IT Park PTCL Training Center , Peshawar, Pakistan',
       website: 'https://www.linkedin.com/company/women-digital-space-pvt-ltd/?originalSubdomain=pk',
-      imageUrl: 'src/assets/Software-house logos/women-digital-space.jpeg'
+      imageUrl: 'public/software-house-logos/women-digital-space.jpeg'
     },
     {
       id: 3,
