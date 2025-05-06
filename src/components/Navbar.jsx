@@ -1,8 +1,5 @@
 import { Link } from 'react-router-dom';
-import { SiPaloaltosoftware } from 'react-icons/si';
 import { useState,useEffect } from 'react';
-
-
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +40,6 @@ function Header() {
         <div className="flex items-center gap-2">
           <Link to='/' className='flex gap-3' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <img src="/coding2-2.png" alt="" className='w-10'/> 
-          {/* <span><SiPaloaltosoftware className="text-white text-2xl" /></span> */}
             <h1 className="text-4xl text-[#E1EEBC] font-bold">𝙳𝚎𝚟𝙷𝚞𝚋</h1>
           </Link>
         </div>

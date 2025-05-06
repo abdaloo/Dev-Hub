@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Eye, EyeOff, Section } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CreateAccountForm = () => {
@@ -53,8 +53,6 @@ const CreateAccountForm = () => {
       // Send to backend API here
     }
   };
-
-  // window.body.style.backgroundColor = "E1EEBC";
 
   return (
     <section className="bg-[#E1EEBC] py-5">

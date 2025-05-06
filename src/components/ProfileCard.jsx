@@ -13,7 +13,6 @@ const ProfileCard = () => {
         <div className="p-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Abdal Hussain</h2>
           <p className="text-lg text-teal-600 font-semibold">MERN Stack Developer | DevHub's Founder </p>
-          {/* <p className="text-md text-gray-600 mt-1"></p> */}
         </div>
       </div>
     </div>

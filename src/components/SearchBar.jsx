@@ -18,11 +18,6 @@ const SearchBar = () => {
     setFilteredHouses(filtered);    
   };
 
-  // const handleFilter = (criteria) => {
-  //   const filtered = softwareHousesData.filter((house) => house.services.includes(criteria));
-  //   setFilteredHouses(filtered);
-  // };
-
   return (
     <div className="p-6 space-y-6">
       <div className="flex space-x-4">
@@ -34,14 +29,6 @@ const SearchBar = () => {
           placeholder="Search Software Houses..."
           className="p-2 border rounded-lg w-150 m-auto focus:ring-[#328E6E] focus:outline-none focus:ring-2"
         />
-        
-        {/* Filter Button */}
-        {/* <button
-          onClick={() => handleFilter('IoT Solutions')} // You can change this to the criteria you want to filter
-          className="px-4 py-2 bg-[#328E6E] hover:bg-[#26775C] text-white rounded-lg"
-        >
-          Filter
-        </button> */}
       </div>
 
       {/* Display filtered software houses */}
@@ -52,7 +39,6 @@ const SearchBar = () => {
               key={house.id}
               className="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition"
             >
-            
             <a
                 href={house.website}
                 target="_blank"

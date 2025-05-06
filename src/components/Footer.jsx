@@ -1,8 +1,5 @@
-// export default Footer;
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SiPaloaltosoftware } from "react-icons/si";
-
 
 function Footer() {
   return (
@@ -13,7 +10,6 @@ function Footer() {
         <div>
           <div className='flex gap-2 items-center'>
             <Link to="/" className='flex my-3 gap-2'>
-            {/* <span className="text-white text-2xl mb-1"><SiPaloaltosoftware/></span> */}
               <img src="/coding2-2.png" alt="" className='w-10 mb-1.5 mr-1'/>
               <h2 className="text-2xl font-bold mb-2">𝙳𝚎𝚟𝙷𝚞𝚋</h2>
             </Link>
@@ -26,7 +22,6 @@ function Footer() {
             <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-white text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition mt-5 cursor-pointer">
               Back To Top
             </button>
-          
         </div>
 
         {/* Quick Links */}
