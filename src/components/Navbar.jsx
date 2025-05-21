@@ -52,7 +52,7 @@ function Header() {
     localStorage.removeItem("id");
     setIsLoggedIn(false);
     userName("");
-    navigate("/");
+    navigate("/SignIn");
   };
 
   return (
