@@ -69,7 +69,7 @@ const CreateAccountForm = () => {
         .then((res) => {
           console.log(res);
           setMsg(res.data);
-          Nav("/SignUpForm");
+          Nav("/");
         })
         .catch((err) => {
           console.log(err);
@@ -190,7 +190,7 @@ const CreateAccountForm = () => {
 
         <p className="text-sm text-gray-700">
           Already have an account?{" "}
-          <Link to="/SignUpForm">
+          <Link to="/SignIn">
             <span className="text-blue-600 hover:underline cursor-pointer">
               Sign in
             </span>

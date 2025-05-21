@@ -16,7 +16,7 @@ function AppContent() {
   const location = useLocation();
 
   // List of routes where we want to Hide navbar and footer
-  const hideNavAndFooter = ["/SignUpForm", "/CreateAccountForm"].includes(location.pathname);
+  const hideNavAndFooter = ["/SignIn", "/CreateAccountForm"].includes(location.pathname);
 
   return (
     <>
