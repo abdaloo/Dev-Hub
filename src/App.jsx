@@ -41,7 +41,7 @@ function AppContent() {
             </ProtectedRoute>
           } 
         />
-        <Route path="/SignUpForm" element={<SignUpForm />} />
+        <Route path="/SignIn" element={<SignUpForm />} />
         <Route path="/CreateAccountForm" element={<CreateAccountForm />} />
       </Routes>
       {!hideNavAndFooter && <Footer />}
