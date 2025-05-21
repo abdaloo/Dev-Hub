@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Login_User } from "./apis/apiURL";
+import { login_endpoint } from "./apis/apiEndPoint";
+import axios from "axios";
 
 const SignInForm = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState({});
   const [showPassword, setShowPassword] = useState(false);
+  const [msg,setMsg] = useState("");
+  const Nav = useNavigate();
 
   const validate = () => {
     const newErrors = {};
@@ -33,8 +38,33 @@ const SignInForm = () => {
       setErrors(validationErrors);
     } else {
       setErrors({});
-      console.log("Signed In:", formData);
+      // console.log("Signed In:", formData);
       // You can call your backend API here
+
+      const URL = Login_User + login_endpoint;
+      console.log("URL",URL);
+
+      const userData = {
+        email: formData.email,
+        password: formData.password
+      }
+      console.log("User Data",userData);
+      
+      axios.post(URL,userData)
+      .then((res)=>{
+        console.log(res.data);
+        setMsg(res.data);
+
+      if (res.data) {
+        localStorage.setItem('token', res.data.User_Token);
+        localStorage.setItem('username', res.data.LoginUser.username);
+        localStorage.setItem('id', res.data.LoginUser._id);
+      }
+
+        Nav("/");
+      }).catch((err) => {
+          console.log(err);
+      });
     }
   };
 
@@ -42,6 +72,8 @@ const SignInForm = () => {
     <section className="bg-[#E1EEBC] py-5">
       <div className="max-w-sm mx-auto my-10 border border-gray-300 rounded-md p-6 shadow-md bg-white">
         <h1 className="text-2xl font-semibold mb-4">Sign-In</h1>
+        <p className="text-sm text-red-500 mb-4 font-semibold">{msg.wrn}</p>
+        <p className="text-sm text-green-500 mb-4 font-semibold">{msg.Message}</p>
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Email */}
           <div>

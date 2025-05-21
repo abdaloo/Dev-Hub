@@ -9,6 +9,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SignUpForm from "./components/SignIn";
 import CreateAccountForm from "./components/CreateAccount";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 // App content separated to use useLocation
 function AppContent() {
@@ -23,15 +24,22 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/softwareHouses" element={<SoftwareHouses />} />
-        <Route
-          path="/contact"
+        <Route 
+          path="/softwareHouses" 
           element={
-            <>
+            <ProtectedRoute>
+              <SoftwareHouses />
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/contact" 
+          element={
+            <ProtectedRoute>
               <Contact />
               <ToastContainer position="bottom-right" autoClose={3000} />
-            </>
-          }
+            </ProtectedRoute>
+          } 
         />
         <Route path="/SignUpForm" element={<SignUpForm />} />
         <Route path="/CreateAccountForm" element={<CreateAccountForm />} />

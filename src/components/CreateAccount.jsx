@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Eye, EyeOff } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Add_User } from "./apis/apiURL";
+import { post_endpoint } from "./apis/apiEndPoint";
+import axios from "axios";
 
 const CreateAccountForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -12,6 +15,8 @@ const CreateAccountForm = () => {
 
   const [errors, setErrors] = useState({});
   const [showPassword, setShowPassword] = useState(false);
+  const [msg, setMsg] = useState("");
+  const Nav = useNavigate();
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -20,7 +25,7 @@ const CreateAccountForm = () => {
   const validate = () => {
     const newErrors = {};
 
-    if (!formData.name.trim()) newErrors.name = "Enter your name";
+    if (!formData.username.trim()) newErrors.name = "Enter your name";
     if (!formData.email.trim()) {
       newErrors.email = "Enter your email";
     } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formData.email)) {
@@ -49,8 +54,26 @@ const CreateAccountForm = () => {
       setErrors(validationErrors);
     } else {
       setErrors({});
-      console.log("Account created:", formData);
       // Send to backend API here
+      const userData = {
+        username: formData.username,
+        email: formData.email,
+        password: formData.password
+      }
+      console.log("Account created:", userData);    
+
+      const URL = Add_User + post_endpoint;
+      console.log("url", URL);
+
+      axios.post(URL, userData)
+        .then((res) => {
+          console.log(res);
+          setMsg(res.data);
+          Nav("/SignUpForm");
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
   };
 
@@ -58,6 +81,7 @@ const CreateAccountForm = () => {
     <section className="bg-[#E1EEBC] py-5">
       <div className="max-w-sm mx-auto my-10 border border-gray-300 rounded-md p-6 shadow-md bg-[#FFFFFF]">
         <h1 className="text-2xl font-semibold mb-4">Create account</h1>
+        <p className="text-sm text-green-500 mb-4 font-semibold">{msg.Message}</p>
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Name */}
           <div>
@@ -65,9 +89,9 @@ const CreateAccountForm = () => {
               Your name
             </label>
             <input
-              name="name"
+              name="username"
               type="text"
-              value={formData.name}
+              value={formData.username}
               onChange={handleChange}
               className="w-full mt-1 border border-gray-400 p-2 rounded focus:outline-none focus:ring-[#328E6E] focus:ring-1"
             />
@@ -136,12 +160,12 @@ const CreateAccountForm = () => {
                 className="w-full mt-1 border border-gray-400 p-2 rounded focus:outline-none focus:ring-[#328E6E] focus:ring-1"
               />
               <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-2 top-4 text-gray-500"
-                >
-                  {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
-                </button>
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-2 top-4 text-gray-500"
+              >
+                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+              </button>
             </div>
             {errors.confirmPassword && (
               <p className="text-red-600 text-sm">{errors.confirmPassword}</p>
