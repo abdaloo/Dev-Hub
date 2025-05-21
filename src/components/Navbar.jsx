@@ -127,7 +127,7 @@ function Header() {
               </button>
             </>
           ) : (
-            <Link to="/SignUpForm">
+            <Link to="/SignIn">
               <button className="bg-white text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition cursor-pointer">
                 Sign in
               </button>
@@ -229,7 +229,7 @@ function Header() {
               </>
             ) : (
               <button className="bg-white text-[#328E6E] px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition cursor-pointer">
-                <Link to="/SignUpForm">Sign in</Link>
+                <Link to="/SignIn">Sign in</Link>
               </button>
             )}
           </div>
