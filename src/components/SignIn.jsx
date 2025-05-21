@@ -61,7 +61,7 @@ const SignInForm = () => {
         localStorage.setItem('id', res.data.LoginUser._id);
       }
 
-        Nav("/signUp");
+        Nav("/");
       }).catch((err) => {
           console.log(err);
       });
