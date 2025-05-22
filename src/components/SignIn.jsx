@@ -61,9 +61,13 @@ const SignInForm = () => {
         localStorage.setItem('id', res.data.LoginUser._id);
       }
 
-        Nav("/");
-      }).catch((err) => {
+        Nav("/");      }).catch((err) => {
           console.log(err);
+          if (err.response && err.response.data) {
+            setMsg(err.response.data); // This will capture the error message from the server
+          } else {
+            setMsg({ code: "An error occurred. Please try again." });
+          }
       });
     }
   };
@@ -72,8 +76,7 @@ const SignInForm = () => {
     <section className="bg-[#E1EEBC] py-5">
       <div className="max-w-sm mx-auto my-10 border border-gray-300 rounded-md p-6 shadow-md bg-white">
         <h1 className="text-2xl font-semibold mb-4">Sign-In</h1>
-        <p className="text-sm text-red-500 mb-4 font-semibold">{msg.wrn}</p>
-        <p className="text-sm text-green-500 mb-4 font-semibold">{msg.Message}</p>
+        <p className="text-sm text-green-500 mb-4 font-semibold">{msg.msg}</p>
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Email */}
           <div>
@@ -87,6 +90,7 @@ const SignInForm = () => {
               onChange={handleChange}
               className="w-full mt-1 border border-gray-400 p-2 rounded focus:outline-none focus:ring-1 focus:ring-[#328E6E]"
             />
+            <p className="text-sm text-red-500 mb-4 font-semibold">{msg.wrn}</p>
             {errors.email && (
               <p className="text-red-600 text-sm">{errors.email}</p>
             )}

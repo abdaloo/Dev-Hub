@@ -51,7 +51,7 @@ function Header() {
     localStorage.removeItem("username");
     localStorage.removeItem("id");
     setIsLoggedIn(false);
-    userName("");
+    setUserName("");
     navigate("/SignIn");
   };
 
@@ -116,8 +116,8 @@ function Header() {
         <div className="hidden md:flex gap-4 items-center">
           {isLoggedIn ? (
             <>
-              <span className="text-yellow-300 w-0.7 text-2xl"><FaUser /></span>
-              <span className="text-yellow-300 font-bold text-2xl">{userName}
+              <span className="text-[#E1EEBC] w-0.7 text-2xl"><FaUser /></span>
+              <span className="text-[#E1EEBC] font-bold text-2xl">{userName}
               </span>
               <button
                 onClick={handleLogout}
@@ -217,8 +217,8 @@ function Header() {
             {isLoggedIn ? (
               <>
                 <span className="flex gap-2 items-center">
-                  <span className="text-yellow-300 w-0.7 text-2xl"><FaUser /></span>
-                  <span className="text-yellow-300 font-bold text-2xl">{userName}</span>
+                  <span className="text-[#E1EEBC] w-0.7 text-2xl"><FaUser /></span>
+                  <span className="text-[#E1EEBC] font-bold text-2xl">{userName}</span>
                 </span>
                 <button
                   onClick={handleLogout}
